@@ -7,6 +7,18 @@ function takeANumber(lineName, name){
   }
 }
 
+var x = 0;
+
+function takeANumber2 () {
+  x++;
+  
+  console.log (`Welcome, your ticket number is ${x}`);
+}
+
+takeANumber2();
+takeANumber2();
+
+
 function nowServing (lineName) {
   var x = lineName.length;
   
@@ -20,6 +32,7 @@ function nowServing (lineName) {
 
 function currentLine(line) {
   var len = line.length;
+  
   if (len === 0) {
     return "The line is currently empty.";
   } else {
